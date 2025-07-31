@@ -190,7 +190,7 @@ export default function Home() {
             <div className="flex items-center h-full">
               <div className="flex flex-col gap-6">
                 <AnimatedContent
-                  className="flex items-center gap-2"
+                  // className="flex items-center gap-2"
                   distance={150}
                   direction="horizontal"
                   reverse={false}
