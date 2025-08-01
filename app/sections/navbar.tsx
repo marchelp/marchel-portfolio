@@ -33,9 +33,9 @@ export default function NavBar() {
           <NavBody>
             <NavbarLogo />
             <NavItems items={navItems} />
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <NavbarButton variant="primary">Login</NavbarButton>
-            </div>
+            </div> */}
           </NavBody>
 
           {/* Mobile Navigation */}
@@ -62,7 +62,7 @@ export default function NavBar() {
                   <span className="block">{item.name}</span>
                 </a>
               ))}
-              <div className="flex w-full flex-col gap-4">
+              {/* <div className="flex w-full flex-col gap-4">
                 <NavbarButton
                   onClick={() => setIsMobileMenuOpen(false)}
                   variant="primary"
@@ -70,7 +70,7 @@ export default function NavBar() {
                 >
                   Login
                 </NavbarButton>
-              </div>
+              </div> */}
             </MobileNavMenu>
           </MobileNav>
         </Navbar>
