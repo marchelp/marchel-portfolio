@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import NavBar from "./sections/navbar"
 import Lanyard from "./components/Lanyard/Lanyard";
 import RotatingText from "./components/RotatingText/RotatingText";
 import SplitText from "./components/SplitText/SplitText";
@@ -12,16 +14,15 @@ import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
 import { Timeline } from "./components/Timeline/Timeline";
 
 export default function Home() {
+
   const data = [
     {
       title: "2025",
       content: (
         <div>
-          <h2 className="font-bold text-xl my-2">
-            April - June 
-          </h2>
+          <h2 className="font-bold text-xl my-2">April - June</h2>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            MAGENTA Batch 2 
+            MAGENTA Batch 2
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -161,20 +162,25 @@ export default function Home() {
   ];
 
   return (
+    <>
+      {/* Navbar */}
+      <NavBar />
+      
     <div className="min-h-screen overflow-x-hidden bg-[#1B232E]">
+
       {/* <SplashCursor /> */}
       <div className="absolute top-0 right-0 bottom-0 w-full h-full">
         <Squares
-          speed={0.1}
+          speed={0.05}
           squareSize={40}
           direction="diagonal" // up, down, left, right, diagonal
           borderColor="#454B29"
           hoverFillColor="#1B232E"
         />
       </div>
-      <div className="container mx-auto h-screen">
+      <div className="container mx-auto" id="home">
         <div className="grid grid-cols-12">
-          <div className="col-span-5 relative">
+          <div className="col-span-full md:col-span-5 relative">
             <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
             <div className="absolute top-20 right-10">
               <CircularText
@@ -186,7 +192,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-span-7 ml-4 lg:mr-24">
+          <div className="col-span-full md:col-span-7 ml-4 lg:mr-24 mt-4">
             <div className="flex items-center h-full">
               <div className="flex flex-col gap-6">
                 <AnimatedContent
@@ -203,7 +209,7 @@ export default function Home() {
                   delay={0.3}
                 >
                   <div className="flex items-center gap-2">
-                    <h1 className="text-2xl text-white font-bold">
+                    <h1 className="md:text-2xl text-white font-bold">
                       I'm Ready For Job
                     </h1>
                     <RotatingText
@@ -213,7 +219,7 @@ export default function Home() {
                         "Data Analyst",
                         "AI Development",
                       ]}
-                      mainClassName="px-2 sm:px-2 md:px-3 bg-[#C5F10F] text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-2xl font-bold inline-flex transition-all"
+                      mainClassName="px-2 sm:px-2 md:px-3 bg-[#C5F10F] text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg md:text-2xl font-bold inline-flex transition-all"
                       staggerFrom={"last"}
                       initial={{ y: "100%" }}
                       animate={{ y: 0 }}
@@ -233,7 +239,7 @@ export default function Home() {
                 <div className="flex flex-col items-start">
                   <SplitText
                     text="I'm Marchel Adias Pradana"
-                    className="text-2xl font-semibold text-center"
+                    className="md:text-2xl font-semibold text-center"
                     delay={50}
                     duration={0.6}
                     ease="power3.out"
@@ -246,7 +252,7 @@ export default function Home() {
                   />
                   <SplitText
                     text="FullStack Developer"
-                    className="text-2xl font-semibold text-center text-[#C5F10F]"
+                    className="md:text-2xl font-semibold text-center text-[#C5F10F]"
                     delay={75}
                     duration={0.6}
                     ease="power3.out"
@@ -265,7 +271,7 @@ export default function Home() {
                     delay={75}
                     animateBy="words"
                     direction="top"
-                    className="text-xl mb-8"
+                    className="md:text-xl mb-8"
                   />
 
                   <div className="flex items-center">
@@ -279,7 +285,7 @@ export default function Home() {
                       ]}
                       animationSpeed={3}
                       showBorder={false}
-                      className="px-6 py-3 rounded-lg border"
+                      className="mb-4 px-6 py-3 rounded-lg border"
                     >
                       <a href="https://drive.google.com/file/d/1rkRzwk9v5aBDQOTPfAh9XShVoECAAJKQ/view?usp=sharing">
                         See my CV
@@ -296,13 +302,15 @@ export default function Home() {
       {/* Section */}
 
       {/* <div className="container mx-auto min-h-screen"> */}
-      <div className="">
-        <ScrollVelocity
+      <div className="container" id="experience">
+        {/* <ScrollVelocity
           texts={["Marchel Adias Pradana -", "Web - Data - AI -"]}
           // className="custom-scroll-text"
-        />
-        <Timeline data={data}/>
+        /> */}
+        <Timeline data={data} />
       </div>
     </div>
+
+    </>
   );
 }
