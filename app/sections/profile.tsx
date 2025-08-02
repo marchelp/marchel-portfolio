@@ -11,7 +11,7 @@ import GradientText from "../components/GradientText/GradientText";
 export default function Profile() {
   return (
     <>
-      <div className="absolute top-0 right-0 bottom-0 w-full h-full">
+      <div className="absolute top-0 right-0 bottom-0 w-full h-full hidden dark:block">
         <DarkVeil />
       </div>
       <div className="container mx-auto" id="home">
@@ -37,7 +37,7 @@ export default function Profile() {
                   delay={0.3}
                 >
                   <div className="flex items-center gap-2">
-                    <h1 className="md:text-2xl font-bold text-white">
+                    <h1 className="md:text-2xl font-bold">
                       I'm Ready For Job
                     </h1>
                     <RotatingText
@@ -67,7 +67,7 @@ export default function Profile() {
                 <div className="flex flex-col items-start">
                   <SplitText
                     text="Marchel Adias Pradana"
-                    className="md:text-2xl font-semibold text-center text-white"
+                    className="md:text-2xl font-semibold text-center"
                     delay={50}
                     duration={0.6}
                     ease="power3.out"
@@ -99,7 +99,7 @@ export default function Profile() {
                     delay={75}
                     animateBy="words"
                     direction="top"
-                    className="text-sm md:text-md mb-8 text-white"
+                    className="text-sm md:text-md mb-8"
                   />
 
                   <div className="flex items-center">
