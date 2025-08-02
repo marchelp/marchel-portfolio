@@ -16,9 +16,9 @@ import { useState } from "react";
 export default function NavBar() {
     const navItems = [
     { name: "Home", link: "#home" },
-    { name: "Profile", link: "#profile" },
     { name: "Experience", link: "#experience" },
     { name: "Project", link: "#project" },
+    { name: "Skill", link: "#skill" },
     { name: "Contact", link: "#contact" },
   ];
 
