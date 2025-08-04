@@ -64,7 +64,20 @@ export default function Profile() {
                   </div>
                 </AnimatedContent>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start gap-2">
+                  <SplitText
+                    text="About Me"
+                    className="md:text-2xl font-semibold text-center text-[#C5F10F]"
+                    delay={75}
+                    duration={0.6}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                    threshold={0.1}
+                    rootMargin="-100px"
+                    textAlign="center"
+                  />
                   <SplitText
                     text="Marchel Adias Pradana"
                     className="md:text-2xl font-semibold text-center"
@@ -78,28 +91,15 @@ export default function Profile() {
                     rootMargin="-100px"
                     textAlign="center"
                   />
-                  <SplitText
-                    text="FullStack Developer"
-                    className="md:text-2xl font-semibold text-center text-[#C5F10F]"
-                    delay={75}
-                    duration={0.6}
-                    ease="power3.out"
-                    splitType="chars"
-                    from={{ opacity: 0, y: 40 }}
-                    to={{ opacity: 1, y: 0 }}
-                    threshold={0.1}
-                    rootMargin="-100px"
-                    textAlign="center"
-                  />
                 </div>
 
                 <div className="">
                   <BlurText
-                    text='I am a fresh graduated at Universitas Pembangunan Negeri "VETERAN" Jawa Timur, starting to look for roles in the web development, data analyst, or AI Engineer. I really enjoy learning things related to technology. My dream right now is to become a Web Developer at a well-known company. If you also have the same interests as me.'
+                    text='I am a fresh graduated at Universitas Pembangunan Negeri "VETERAN" Jawa Timur, starting to look for roles in the web development, data analyst, or AI Engineer. I really enjoy learning things related to technology. My dream right now is to working at a well-known company. If you`re interested in connecting or collaborating, feel free to reach out or connect with me through the contacts below.'
                     delay={75}
                     animateBy="words"
                     direction="top"
-                    className="text-sm md:text-md mb-8"
+                    className="text-sm md:text-md mb-4"
                   />
 
                   <div className="flex items-center">
@@ -113,9 +113,9 @@ export default function Profile() {
                       ]}
                       animationSpeed={8}
                       showBorder={false}
-                      className="mb-4 px-6 py-3 rounded-lg border bg-[#1B232E]"
+                      className="mb-4 px-6 py-3 rounded-lg bg-[#1B232E]"
                     >
-                      <a href="https://drive.google.com/file/d/1rkRzwk9v5aBDQOTPfAh9XShVoECAAJKQ/view?usp=sharing">
+                      <a href="https://drive.google.com/file/d/1z11SJVfJNtMutETwJuQ720UxbAtmW4QF/view?usp=sharing">
                         See my CV
                       </a>
                     </GradientText>
