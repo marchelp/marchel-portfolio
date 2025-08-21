@@ -115,7 +115,7 @@ export default function Profile() {
                       showBorder={false}
                       className="mb-4 px-6 py-3 rounded-lg bg-[#1B232E]"
                     >
-                      <a href="https://drive.google.com/file/d/1z11SJVfJNtMutETwJuQ720UxbAtmW4QF/view?usp=sharing">
+                      <a href="https://drive.google.com/file/d/1CRS8qy1DFq-rC_b1r0M6cqjD6FknPEOt/view?usp=sharing">
                         See my CV
                       </a>
                     </GradientText>
