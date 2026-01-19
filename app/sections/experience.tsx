@@ -7,6 +7,59 @@ import ScrollReveal from "../components/ScrollReveal/ScrollReveal";
 export default function Experience() {
   const data = [
     {
+      title: "IT Outsource - Frontend Developer (Client: SENT Company, KSA) PT Sagara Asia Teknologi",
+      content: (
+        <div>
+          <p className="font-bold text-xl">
+            PT Sagara Asia Teknologi - IT Outsource Contract (Remote)
+          </p>
+          <p className="text-md">October 2025 - January 2026</p>
+          <p className="text-md mb-2">Kota Surabaya, East Java, Indonesia</p>
+          <LinkPreview
+            url="https://drive.google.com/file/d/19K1obn5f9eOayKeox36tlLOEXIBS4the/view?usp=sharing"
+            className="text-sm underline hover:text-blue-500"
+          >
+            Click here to see My Work Letter
+          </LinkPreview>
+          <ul className="list-disc my-4 ml-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <li>Completed a 3-month contract of IT Outsource Remote with client: <b>SENT Company, KSA</b></li>
+            <li>Worked as Frontend Developer with responsible for building and maintaining the web user interface</li>
+            <li>Developed logistics features ranging from shipping services to warehouse management to support the company's daily operations using Next.js</li>
+          </ul>
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src="images/experience/sagara/sagara-1.png"
+              alt="sptp-experience"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="images/experience/sagara/sagara-2.png"
+              alt="sptp-experience"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            {/* <img
+              src="images/experience/sptp/sptp-3.jpg"
+              alt="sptp-experience"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="images/experience/sptp/sptp-4.jpg"
+              alt="sptp-experience"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            /> */}
+          </div>
+        </div>
+      ),
+    },
+    {
       title: "MAGENTA Batch 2 2025 as IT Planning and Control",
       content: (
         <div>
