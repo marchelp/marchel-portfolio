@@ -34,6 +34,16 @@ export default function Project() {
     //   tech: ["react"],
     // }
     {
+      title: "Designer Landing Page 'RONIE PARERO'",
+      description:
+        "A minimalist and responsive landing page tailored for a designer to exhibit 'RONIE PARERO' creative portfolio, emphasizing visual storytelling and clean aesthetics.",
+      image: "/images/project/landingpage-ronieparero.png",
+      demo:
+        "https://ronie-parero.vercel.app/",
+      // github: "https://github.com/marchelp/ronie-parero",
+      tech: ["nextjs", "react", "tailwind"],
+    },
+    {
       title: "Findtofine",
       description:
         "A mobile app that helps travelers pack efficiently by recognizing items through photos and creating luggage checklists.",
