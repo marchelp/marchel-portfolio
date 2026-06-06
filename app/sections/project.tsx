@@ -34,7 +34,7 @@ export default function Project() {
     //   tech: ["react"],
     // }
     {
-      title: "Designer Landing Page 'RONIE PARERO'",
+      title: '"Ronie Parero" Landing Page',
       description:
         "A minimalist and responsive landing page tailored for a designer to exhibit 'RONIE PARERO' creative portfolio, emphasizing visual storytelling and clean aesthetics.",
       image: "/images/project/landingpage-ronieparero.png",
